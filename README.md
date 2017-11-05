@@ -50,7 +50,7 @@ https://github.com/amarnathbh/hello-jenkins
 
  1. Create a new job. Give a name to job. Select Freestyle Project.
 
-      ! ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots)
+      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots)
 
  2. Select github project and give Github url
 
@@ -93,7 +93,7 @@ https://github.com/amarnathbh/hello-jenkins
 
  1. Go to your Job >> Configure >> Post Build Action >> Trigger parameterized build on other project
 
-      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots/Triggering other jobs.png)
+      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots/Triggering\ /other\ /jobs.png)
       
       ![Screenshot]()
       
@@ -103,7 +103,7 @@ https://github.com/amarnathbh/hello-jenkins
 
  2. Type "http://amarnathbh6b.mylabserver.com/job/Myfirstdockerbuild/api/json?pretty=true"
 
-      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots/ViewHistory.png)
+      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/blob/master/screenshots/ViewHistory.png)
 
 
 
