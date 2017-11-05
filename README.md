@@ -36,17 +36,17 @@ https://github.com/amarnathbh/hello-jenkins
 
 ## 2. Install the plugin
       1. Go to Manage Jenkins >> Manage plugins >> install (search and install various required plugins like github, email extension for notification, build pipeline etc)
-      ![Screenshot]()
+      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots)
       
 ## 3. Congfigure the slave node
       1. Give the name for slave node, executors and give Remote root directory.
       2. configure using below screenshot
-      ![Screenshot]()
+      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots/configslave.png)
       
 #### Creating a new job in jenkins
 
 ## 1. Create a new job. Give a name to job. Select Freestyle Project.
-      ! ![Screenshot]()
+      ! ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots)
 
 ## 2. Select github project and give Github url
 
@@ -72,21 +72,22 @@ https://github.com/amarnathbh/hello-jenkins
 
 ## 2. Setup Extended E-mail Notification. The below screen shows setup for Extended Configuration. Both the setups are same.
 
-    ![Screenshot]
+    ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots/Emailsetting.png)
 
 ## 3. Go to your Job >> Configure >> Post Build Action >> Select Email notification and editable Email notification
 
-      ![Screenshot]
+      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots/EmailNotification.png)
       
 ## 4. Now, when you build you will get the email notification for the corresponding build.
 
-      ![Screenshot]
+      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots)
       
 #### Triggering other job from this job   
 
 ## 1. Go to your Job >> Configure >> Post Build Action >> Trigger parameterized build on other project
 
-      ![Screenshot]
+      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots/Triggering other jobs.png)
+      ![Screenshot]()
       
 #### To view History of past build
 
@@ -94,7 +95,7 @@ https://github.com/amarnathbh/hello-jenkins
 
 ## 2. Type "http://amarnathbh6b.mylabserver.com/job/Myfirstdockerbuild/api/json?pretty=true"
 
-      ![Screenshot]()
+      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots/ViewHistory.png)
 
 
 
