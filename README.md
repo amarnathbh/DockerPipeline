@@ -12,11 +12,20 @@ This project covers following things:
 
 * The ability to trigger a build in response to a git commit via a [git hook](http://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks).
 * The ability to determine failure or success of a build job, and as a result trigger an external event (run post-build task, send email, etc).
-* The ability to have multiple jobs corresponding to multiple branches in a repository. Specifically, a commit to a branch, `release`, will trigger a `release build job`. A commit to a branch, `dev`, will trigger a `dev build job`.
+* The bility to trigger other jobs when the present build job is success full.
+* The ability to have multiple jobs corresponding to multiple branches in a repository. Specifically, a commit to a branch, `release`, will trigger a `release build job`. A commit to a branch, `dev`, will trigger a `dev build job`.(Coming soon)
 * The ability to track and display a history of past builds (a simple list works) via http.
 
 Code used for this project: 
 https://github.com/amarnathbh/hello-jenkins 
+
+#### Workflow
+
+    1. Developer pushes code in to github.
+    2. Jenkins is notified using githubhook and download the code repository.
+    3. Jenkins job1 - Docker builds image and runs the image.
+    4. Job1 trigger the email notification
+    5. job1 trigger the other job2
 
 #### Build
   1. Use this link to install Jenkins on Centos
