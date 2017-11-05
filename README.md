@@ -37,14 +37,14 @@ https://github.com/amarnathbh/hello-jenkins
  2. Install the plugin
       1. Go to Manage Jenkins >> Manage plugins >> install (search and install various required plugins like github, email extension for notification, build pipeline etc)
       
-      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots)
+      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/blob/master/screenshots/plugin.png)
        
  3. Congfigure the slave node
  
       1. Give the name for slave node, executors and give Remote root directory.
       2. configure using below screenshot
       
-      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots/configslave.png)
+      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/blob/master/screenshots/configslave.png)
       
 #### Creating a new job in jenkins
 
@@ -79,11 +79,11 @@ https://github.com/amarnathbh/hello-jenkins
 
  2. Setup Extended E-mail Notification. The below screen shows setup for Extended Configuration. Both the setups are same.
 
-    ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots/Emailsetting.png)
+    ![Screenshot](https://github.com/amarnathbh/DockerPipeline/blob/master/screenshots/Emailsetting.png)
 
  3. Go to your Job >> Configure >> Post Build Action >> Select Email notification and editable Email notification
 
-      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots/EmailNotification.png)
+      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/blob/master/screenshots/EmailNotification.png)
       
  4. Now, when you build you will get the email notification for the corresponding build.
 
@@ -93,7 +93,7 @@ https://github.com/amarnathbh/hello-jenkins
 
  1. Go to your Job >> Configure >> Post Build Action >> Trigger parameterized build on other project
 
-      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots/Triggering\ /other\ /jobs.png)
+      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/blob/master/screenshots/Triggering%20other%20jobs.png)
       
       ![Screenshot]()
       
