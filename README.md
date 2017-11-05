@@ -36,16 +36,19 @@ https://github.com/amarnathbh/hello-jenkins
 
 ## 2. Install the plugin
       1. Go to Manage Jenkins >> Manage plugins >> install (search and install various required plugins like github, email extension for notification, build pipeline etc)
+      
       ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots)
       
 ## 3. Congfigure the slave node
       1. Give the name for slave node, executors and give Remote root directory.
       2. configure using below screenshot
+      
       ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots/configslave.png)
       
 #### Creating a new job in jenkins
 
 ## 1. Create a new job. Give a name to job. Select Freestyle Project.
+
       ! ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots)
 
 ## 2. Select github project and give Github url
@@ -61,10 +64,12 @@ https://github.com/amarnathbh/hello-jenkins
 ## 2. Select Build trigger as GitHub hook trigger for GITScm polling and poll scm
 
 ## 3. For Build select Execute shell and give command as below
+...
       # build docker image using github repository
         docker build --pull=true -t github.com/amarnathbh/hello-jenkins:$GIT_COMMIT .
        # test docker image using test file 
         docker run -i --rm github.com/amarnathbh/hello-jenkins:$GIT_COMMIT ./script/test
+...
 
 #### Notification for build success or failure for a job
 
@@ -87,6 +92,7 @@ https://github.com/amarnathbh/hello-jenkins
 ## 1. Go to your Job >> Configure >> Post Build Action >> Trigger parameterized build on other project
 
       ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots/Triggering other jobs.png)
+      
       ![Screenshot]()
       
 #### To view History of past build
@@ -99,10 +105,11 @@ https://github.com/amarnathbh/hello-jenkins
 
 
 
+
 Sources:
-1.
-2.
-3.
+1. CSCDevOps Course (https://github.com/CSC-DevOps/Course/blob/master/Project/M1.md)
+2. Docker use case (https://www.docker.com/sites/default/files/UseCase/RA_CI%20with%20Docker_08.25.2015.pdf)
+3. Jenkins.com
 
 
       
