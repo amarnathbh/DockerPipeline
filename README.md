@@ -19,9 +19,9 @@ Code used for this project:
 https://github.com/amarnathbh/hello-jenkins 
 
 #### Build
-## 1. Use this link to install Jenkins on Centos
+  1. Use this link to install Jenkins on Centos
 [Installing Jenkins on Centos](https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Red+Hat+distributions)
-## 2. Install this dependencies on slave node 
+  2. Install this dependencies on slave node 
 [Installing Dependencies](https://github.com/amarnathbh/hello-jenkins/dependencies.sh)
 
 #### Configuring Master node
@@ -32,14 +32,15 @@ https://github.com/amarnathbh/hello-jenkins
 
 #### Configureing Jenkins
 
-## 1. Login in to Jenkins console 
+ 1. Login in to Jenkins console 
 
-## 2. Install the plugin
+ 2. Install the plugin
       1. Go to Manage Jenkins >> Manage plugins >> install (search and install various required plugins like github, email extension for notification, build pipeline etc)
       
       ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots)
-      
-## 3. Congfigure the slave node
+       
+ 3. Congfigure the slave node
+ 
       1. Give the name for slave node, executors and give Remote root directory.
       2. configure using below screenshot
       
@@ -47,24 +48,25 @@ https://github.com/amarnathbh/hello-jenkins
       
 #### Creating a new job in jenkins
 
-## 1. Create a new job. Give a name to job. Select Freestyle Project.
+ 1. Create a new job. Give a name to job. Select Freestyle Project.
 
       ! ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots)
 
-## 2. Select github project and give Github url
+ 2. Select github project and give Github url
 
-## 3. click Restrict where this project can be run and give label expression which is mapped to slavenode
+ 3. click Restrict where this project can be run and give label expression which is mapped to slavenode
 
-## 4. Select Source Code Management as Git and give github url and select the branch you want to build.
+ 4. Select Source Code Management as Git and give github url and select the branch you want to build.
 
 #### Automatic building 
 
-## 1. Go to your Job >> Configure >> Build Triggers. 
+ 1. Go to your Job >> Configure >> Build Triggers. 
 
-## 2. Select Build trigger as GitHub hook trigger for GITScm polling and poll scm
+ 2. Select Build trigger as GitHub hook trigger for GITScm polling and poll scm
 
-## 3. For Build select Execute shell and give command as below
+ 3. For Build select Execute shell and give command as below
 ...
+
       # build docker image using github repository
         docker build --pull=true -t github.com/amarnathbh/hello-jenkins:$GIT_COMMIT .
        # test docker image using test file 
@@ -73,23 +75,23 @@ https://github.com/amarnathbh/hello-jenkins
 
 #### Notification for build success or failure for a job
 
-## 1. Go to Manage Jenkins >> Configure System.
+ 1. Go to Manage Jenkins >> Configure System.
 
-## 2. Setup Extended E-mail Notification. The below screen shows setup for Extended Configuration. Both the setups are same.
+ 2. Setup Extended E-mail Notification. The below screen shows setup for Extended Configuration. Both the setups are same.
 
     ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots/Emailsetting.png)
 
-## 3. Go to your Job >> Configure >> Post Build Action >> Select Email notification and editable Email notification
+ 3. Go to your Job >> Configure >> Post Build Action >> Select Email notification and editable Email notification
 
       ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots/EmailNotification.png)
       
-## 4. Now, when you build you will get the email notification for the corresponding build.
+ 4. Now, when you build you will get the email notification for the corresponding build.
 
       ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots)
       
 #### Triggering other job from this job   
 
-## 1. Go to your Job >> Configure >> Post Build Action >> Trigger parameterized build on other project
+ 1. Go to your Job >> Configure >> Post Build Action >> Trigger parameterized build on other project
 
       ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots/Triggering other jobs.png)
       
@@ -97,9 +99,9 @@ https://github.com/amarnathbh/hello-jenkins
       
 #### To view History of past build
 
-## 1. View entire history using browser.
+ 1. View entire history using browser.
 
-## 2. Type "http://amarnathbh6b.mylabserver.com/job/Myfirstdockerbuild/api/json?pretty=true"
+ 2. Type "http://amarnathbh6b.mylabserver.com/job/Myfirstdockerbuild/api/json?pretty=true"
 
       ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots/ViewHistory.png)
 
