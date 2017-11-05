@@ -55,6 +55,12 @@ https://github.com/amarnathbh/hello-jenkins
       
       ![Screenshot](https://github.com/amarnathbh/DockerPipeline/blob/master/screenshots/configslave.png)
       
+#### configuring github hook
+  
+  1. Here we configure github webhook whihc notifies the jenkins about there is a commit
+  
+      ![Screeshot](https://github.com/amarnathbh/DockerPipeline/blob/master/screenshots/githubwebhook.png)
+      
 #### Creating a new job in jenkins
 
  1. Create a new job. Give a name to job. Select Freestyle Project.
