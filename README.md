@@ -50,7 +50,7 @@ https://github.com/amarnathbh/hello-jenkins
 
  1. Create a new job. Give a name to job. Select Freestyle Project.
 
-      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots)
+      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/blob/master/screenshots/firstjob.gif)
 
  2. Select github project and give Github url
 
@@ -87,7 +87,7 @@ https://github.com/amarnathbh/hello-jenkins
       
  4. Now, when you build you will get the email notification for the corresponding build.
 
-      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/tree/master/screenshots)
+      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/blob/master/screenshots/TriggeringEmail.gif)
       
 #### Triggering other job from this job   
 
@@ -95,7 +95,7 @@ https://github.com/amarnathbh/hello-jenkins
 
       ![Screenshot](https://github.com/amarnathbh/DockerPipeline/blob/master/screenshots/Triggering%20other%20jobs.png)
       
-      ![Screenshot]()
+      ![Screenshot](https://github.com/amarnathbh/DockerPipeline/blob/master/screenshots/firstjob.gif)
       
 #### To view History of past build
 
