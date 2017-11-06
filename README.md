@@ -109,12 +109,13 @@ https://github.com/amarnathbh/hello-jenkins
 
       ![Screenshot](https://github.com/amarnathbh/DockerPipeline/blob/master/screenshots/Triggering%20other%20jobs.png)
       
-...
+
  
                # test docker image using test file 
         docker run -i --rm github.com/amarnathbh/hello-jenkins:$GIT_COMMIT ./script/test
         
-...
+
+      
       
       ![Screenshot](https://github.com/amarnathbh/DockerPipeline/blob/master/screenshots/firstjob.gif)
       
