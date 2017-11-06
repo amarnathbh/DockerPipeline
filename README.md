@@ -25,7 +25,7 @@ https://github.com/amarnathbh/hello-jenkins
     2. Jenkins is notified using githubhook and download the code repository.
     3. Jenkins job1 - Docker builds image and runs the image.
     4. Job1 trigger the email notification
-    5. job1 trigger the other job2
+    5. job1 trigger the other job2 -Test
 
 #### Build
   1. Use this link to install Jenkins on Centos
@@ -84,8 +84,7 @@ https://github.com/amarnathbh/hello-jenkins
 
       # build docker image using github repository
         docker build --pull=true -t github.com/amarnathbh/hello-jenkins:$GIT_COMMIT .
-       # test docker image using test file 
-        docker run -i --rm github.com/amarnathbh/hello-jenkins:$GIT_COMMIT ./script/test
+
 ...
 
 #### Notification for build success or failure for a job
@@ -104,11 +103,18 @@ https://github.com/amarnathbh/hello-jenkins
 
       ![Screenshot](https://github.com/amarnathbh/DockerPipeline/blob/master/screenshots/TriggeringEmail.gif)
       
-#### Triggering other job from this job   
+#### Triggering other Job2 - Test from this Job1   
 
  1. Go to your Job >> Configure >> Post Build Action >> Trigger parameterized build on other project
 
       ![Screenshot](https://github.com/amarnathbh/DockerPipeline/blob/master/screenshots/Triggering%20other%20jobs.png)
+      
+...
+ 
+               # test docker image using test file 
+        docker run -i --rm github.com/amarnathbh/hello-jenkins:$GIT_COMMIT ./script/test
+        
+...
       
       ![Screenshot](https://github.com/amarnathbh/DockerPipeline/blob/master/screenshots/firstjob.gif)
       
