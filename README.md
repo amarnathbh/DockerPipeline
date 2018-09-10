@@ -12,7 +12,7 @@ This project covers following things:
 
 * The ability to trigger a build in response to a git commit via a [git hook](http://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks).
 * The ability to determine failure or success of a build job, and as a result trigger an external event (run post-build task, send email, etc).
-* The bility to trigger other jobs when the present build job is success full.
+* The ability to trigger other jobs when the present build job is success full.
 * The ability to have multiple jobs corresponding to multiple branches in a repository. Specifically, a commit to a branch, `release`, will trigger a `release build job`. A commit to a branch, `dev`, will trigger a `dev build job`.(Coming soon)
 * The ability to track and display a history of past builds (a simple list works) via http.
 
